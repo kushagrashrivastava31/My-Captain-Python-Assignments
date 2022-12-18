@@ -1,0 +1,20 @@
+#WAP to accept a filename from the user and display its extension
+filename = input("Input the Filename: ")
+extension = ""
+for i in range(len(filename)-1, -1, -1):
+  if filename[i] == '.':
+    break
+  extension = filename[i] + extension
+if extension=="py":
+    print("The extension of the file is: python")
+elif extension=="jpg":
+    print("The extension of the file is: joint photographic group")
+elif extension=="java":
+    print("The extension of the file is: java")
+elif extension=="js":
+    print("The extension of the file is: javascript")
+elif extension=="png":
+    print("The extension of the file is: portable network graphics")
+else:
+    print("The specified extension cannot be determined")
+
